@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
+@RequestMapping("/**")
 public class HomeController {
 	
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	@RequestMapping(value = {"/index", "/index.do", "/"}, method = RequestMethod.GET)
 	public String index() {
-		System.out.println("Ingresando al controlador HOME");
-		return "login";
+		return "index";
 	}
 	
 	@RequestMapping(value = "/error", method = RequestMethod.POST)
