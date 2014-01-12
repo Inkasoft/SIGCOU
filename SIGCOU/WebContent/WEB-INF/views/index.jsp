@@ -12,7 +12,6 @@
 <jsp:include page="/WEB-INF/include/header.jsp"></jsp:include>
 <h1>Bienvenido!</h1>
 
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+<jsp:include page="/WEB-INF/include/footer.jsp"></jsp:include>
 </body>
 </html>

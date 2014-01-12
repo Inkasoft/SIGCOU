@@ -4,6 +4,38 @@
 	margin-left: 15px;
 }
 
+/* Fondos de pantalla */
+.bk {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -100;
+	overflow: hidden;
+}
+
+.bk1 { background: url("../img/avion.jpg"); }
+.bk2 { background: url("../img/barco.jpg"); }
+.bk3 { background: url("../img/camion.jpg"); }
+.bk4 { background: url("../img/volando.jpg"); }
+
+/* Contenidos */
+.contenidos {
+	margin-right: 15px;
+	margin-left: 15px;
+	padding: 15px;
+}
+
+.container {
+	background: url("../img/white80.png");
+}
+
+/* Footer */
+.footer {
+	border-top: dotted;
+	border-top-width: 1px;
+	padding-top: 10px;
+}
+
 /*Nav bar style*/
 
 .navbar-default {

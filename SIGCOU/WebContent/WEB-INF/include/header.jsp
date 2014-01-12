@@ -1,5 +1,9 @@
+<div class="bk bk1"></div>
+<div class="bk bk2"></div>
+<div class="bk bk3"></div>
+<div class="bk bk4"></div>
 
-<div class="container-fluid">
+<div class="container">
 	<div class="row">
 		<div class="col-md-2">
 			<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/logo.png" />
@@ -19,36 +23,26 @@
 			</button>
 		</div>
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="${pageContext.request.contextPath}">Inicio</a></li>
+			<li><a href="${pageContext.request.contextPath}">Inicio</a></li>
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Envios <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Registro</a></li>
-					<li><a href="#">Consulta</a></li>
-				</ul>
+				<a href="#">Envios</a>
 			</li>
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrega <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Hoja de Ruta</a></li>
-					<li><a href="#">Hoja de Despacho</a></li>
-					<li><a href="#">Recepción</a></li>
-				</ul>
+				<a href="#">Entrega</a>
 			</li>
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Reportes <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Consulta</a></li>
-				</ul>
+				<a href="${pageContext.request.contextPath}/local/hoja_ruta.form">Hojas de Ruta</a>
 			</li>
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Administración <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Tarifas</a></li>
-					<li><a href="#">Usuarios</a></li>
-				</ul>
+				<a href="#">Reportes</a>
+			</li>
+			<li class="dropdown">
+				<a href="#">Administración</a>
 			</li>
 		</ul>
 	</div>
 	</div>
 </div>
+
+
+<div class="container">
