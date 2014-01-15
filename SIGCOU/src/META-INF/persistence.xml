@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="SIGCOU">
+		<class>pe.maotcsa.sigcou.bean.Cliente</class>
+		<class>pe.maotcsa.sigcou.bean.Contenido</class>
+		<class>pe.maotcsa.sigcou.bean.Destinatario</class>
+		<class>pe.maotcsa.sigcou.bean.DetalleHojaRuta</class>
+		<class>pe.maotcsa.sigcou.bean.DetalleVia</class>
+		<class>pe.maotcsa.sigcou.bean.Envio</class>
+		<class>pe.maotcsa.sigcou.bean.Estado</class>
+		<class>pe.maotcsa.sigcou.bean.GuiaDespacho</class>
+		<class>pe.maotcsa.sigcou.bean.Historial</class>
+		<class>pe.maotcsa.sigcou.bean.HojaRuta</class>
+		<class>pe.maotcsa.sigcou.bean.Login</class>
+		<class>pe.maotcsa.sigcou.bean.ManifiestoDespacho</class>
+		<class>pe.maotcsa.sigcou.bean.Mensajero</class>
+		<class>pe.maotcsa.sigcou.bean.Prioridad</class>
+		<class>pe.maotcsa.sigcou.bean.Receptor</class>
+		<class>pe.maotcsa.sigcou.bean.Ruta</class>
+		<class>pe.maotcsa.sigcou.bean.Tarifa</class>
+		<class>pe.maotcsa.sigcou.bean.TipoServicio</class>
+		<class>pe.maotcsa.sigcou.bean.Trabajador</class>
+		<class>pe.maotcsa.sigcou.bean.Ubigeo</class>
+		<class>pe.maotcsa.sigcou.bean.Via</class>
 	</persistence-unit>
 </persistence>
