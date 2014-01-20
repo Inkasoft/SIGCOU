@@ -1,7 +1,12 @@
 package pe.maotcsa.sigcou.bean;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.hibernate.annotations.Formula;
+
 import java.util.List;
 
 
@@ -33,8 +38,12 @@ public class Mensajero implements Serializable {
 	private String mensajeroTelefono;
 
 	//bi-directional many-to-one association to HojaRuta
+	@JsonIgnore
 	@OneToMany(mappedBy="mensajero")
 	private List<HojaRuta> hojaRutas;
+	
+	@Formula(value="CONCAT(MensajeroNombre , ' ' , MensajeroApellido)")
+	private String nombreCompleto;
 
 	public Mensajero() {
 	}
@@ -99,6 +108,14 @@ public class Mensajero implements Serializable {
 		hojaRuta.setMensajero(null);
 
 		return hojaRuta;
+	}
+
+	public String getNombreCompleto() {
+		return nombreCompleto;
+	}
+
+	public void setNombreCompleto(String nombreCompleto) {
+		this.nombreCompleto = nombreCompleto;
 	}
 
 }

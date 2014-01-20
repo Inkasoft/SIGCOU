@@ -1,7 +1,11 @@
 package pe.maotcsa.sigcou.bean;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 import java.util.Date;
 import java.util.List;
 
@@ -19,22 +23,23 @@ public class HojaRuta implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="HojaRutaId")
-	private int hojaRutaId;
+	private Integer hojaRutaId;
 
 	@Column(name="EnvioEntregado")
-	private int envioEntregado;
+	private Integer envioEntregado;
 
 	@Column(name="EnvioRezagado")
-	private int envioRezagado;
+	private Integer envioRezagado;
 
 	@Column(name="EnvioTotal")
-	private int envioTotal;
+	private Integer envioTotal;
 
-	@Temporal(TemporalType.DATE)
+	//@Temporal(TemporalType.DATE)
 	@Column(name="HojaRutaFecha")
 	private Date hojaRutaFecha;
 
 	//bi-directional many-to-one association to DetalleHojaRuta
+	@JsonIgnore
 	@OneToMany(mappedBy="hojaRuta")
 	private List<DetalleHojaRuta> detalleHojaRutas;
 
@@ -44,6 +49,7 @@ public class HojaRuta implements Serializable {
 	private Mensajero mensajero;
 
 	//bi-directional many-to-one association to Ruta
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name="RutaId")
 	private Ruta ruta;
@@ -51,35 +57,35 @@ public class HojaRuta implements Serializable {
 	public HojaRuta() {
 	}
 
-	public int getHojaRutaId() {
+	public Integer getHojaRutaId() {
 		return this.hojaRutaId;
 	}
 
-	public void setHojaRutaId(int hojaRutaId) {
+	public void setHojaRutaId(Integer hojaRutaId) {
 		this.hojaRutaId = hojaRutaId;
 	}
 
-	public int getEnvioEntregado() {
+	public Integer getEnvioEntregado() {
 		return this.envioEntregado;
 	}
 
-	public void setEnvioEntregado(int envioEntregado) {
+	public void setEnvioEntregado(Integer envioEntregado) {
 		this.envioEntregado = envioEntregado;
 	}
 
-	public int getEnvioRezagado() {
+	public Integer getEnvioRezagado() {
 		return this.envioRezagado;
 	}
 
-	public void setEnvioRezagado(int envioRezagado) {
+	public void setEnvioRezagado(Integer envioRezagado) {
 		this.envioRezagado = envioRezagado;
 	}
 
-	public int getEnvioTotal() {
+	public Integer getEnvioTotal() {
 		return this.envioTotal;
 	}
 
-	public void setEnvioTotal(int envioTotal) {
+	public void setEnvioTotal(Integer envioTotal) {
 		this.envioTotal = envioTotal;
 	}
 

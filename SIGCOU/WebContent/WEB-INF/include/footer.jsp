@@ -1,16 +1,22 @@
-</div>
 
-<div class="container footer">
-	<div class="row">
-		<div class="col-sm-10"></div>
-		<div class="col-sm-2" style="text-align: right;">&copy; Inkasoft</div>
+	<div class="row footer">
+			<div class="col-sm-10"></div>
+			<div class="col-sm-2" style="text-align: right;">&copy; Inkasoft</div>
 	</div>
+
 </div>
 
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/underscore-min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/backbone-min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/date.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/typeahead.js"></script>
 
 <script type="text/javascript">
+	var app = {
+			'webRoot': '${pageContext.request.contextPath}/'
+	}
 	$(function () {
 		var BackgroundSlideEffect = function () {
 			this.bkgs = $('.bk');
@@ -30,7 +36,7 @@
 				me.currIndex = nextIndex;
 				setTimeout(function () {
 					me.next(); 
-				}, 3000);
+				}, 5000);
 			});
 			/* Version 1
 			$.when($('.bk').fadeOut()).done(function () {

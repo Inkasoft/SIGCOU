@@ -4,6 +4,29 @@
 	margin-left: 15px;
 }
 
+/* Typeahead */
+.twitter-typeahead, tt-hint {
+	width: 100%;
+}
+
+.tt-dropdown-menu {
+	border: solid 1px silver;
+	margin-top: 2px;
+	border-radius: 4px;
+}
+
+.tt-suggestion {
+	padding: 1px 5px;
+}
+
+.tt-is-under-cursor {
+	background: grey;
+}
+
+.tt-dropdown-menu {
+	background-color: white;
+}
+
 /* Fondos de pantalla */
 .bk {
 	position: fixed;
@@ -32,8 +55,16 @@
 /* Footer */
 .footer {
 	border-top: dotted;
-	border-top-width: 1px;
-	padding-top: 10px;
+	border-top-width: 2px;
+	margin-top: 20px;
+	padding-top: 20px;
+	background: none;
+}
+
+/* Hoja de trabajo */
+#hoja_de_trabajo {
+	background: white;
+	box-shadow: -2px 3px 10px #888888;
 }
 
 /*Nav bar style*/
